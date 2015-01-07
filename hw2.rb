@@ -99,11 +99,11 @@ questions = [
       },
 ]
 
-questions.each do |queery|
-  puts queery[:question].inspect
-  puts queery[:answer_choices]
+questions.each do |query|
+  puts query[:question]
+  puts query[:answer_choices]
   answer = gets.chomp
-    if answer == queery[:answer]
+    if answer == query[:answer]
       puts "correct"
       correct += 1
     else 
